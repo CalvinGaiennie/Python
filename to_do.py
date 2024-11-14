@@ -1,7 +1,9 @@
+# Chat GPT Built this I am studying it
 import os
 
 # File to store tasks
-TASKS_FILE = "tasks.txt"
+TASKS_FILE = os.path.join(os.path.dirname(__file__), "tasks.txt")
+
 
 # Load tasks from file
 def load_tasks():
